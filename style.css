@@ -1,0 +1,94 @@
+header{
+    grid-area: cabe;
+    
+}
+aside{
+    grid-area: brac;
+    
+}
+main{
+    grid-area: prin;
+   
+}
+footer{
+    grid-area: roda;
+    
+}
+body{
+    display: grid;
+    grid-template-areas: 
+   "cabe cabe"
+    "brac prin"
+    "roda roda";
+    grid-template-rows: 200px 500px 200px;
+    grid-template-columns: 300px auto;
+}
+header img{
+    height: 150px;
+    width: auto;
+}
+@media only screen and (max-width: 850px) {
+    body{
+        grid-template-areas: 
+        "cabe"
+        "brac"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 50px 500px 200px;
+    }   
+    header img{
+        display: none;
+    } 
+}
+@media only screen and (max-width: 450px) {
+    body{
+        grid-template-areas: 
+        "secn"
+        "prin"
+        "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 100px;
+    }
+
+section{
+        display: flex;
+    }
+    aside{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+}
+
+
+.card{
+    background-color: blue;
+    color: aqua;
+    width: 88px;
+    height: 88px;
+    margin: 10px;
+}
+
+.mae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pai{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
